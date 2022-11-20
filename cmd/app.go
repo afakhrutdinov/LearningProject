@@ -20,7 +20,7 @@ func IndexHandler(w http.ResponseWriter, r *http.Request, params httprouter.Para
 	if err != nil {
 		log.Fatalf("write error: %v", err)
 	}
-	log.Printf("Somebody called GET localhost:1234/%s", name)
+	log.Printf("Somebody called GET localhost:1234/%s/program/%s", name, program)
 }
 
 func main() {
